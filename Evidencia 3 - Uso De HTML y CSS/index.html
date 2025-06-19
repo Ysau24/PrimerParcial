@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="#">
+        <section class="Formulario web"> 
+            
+            <h1><strong>Formulario de contacto</strong></h1>
+
+            <p>Enviar un correo electrónico.Todos los campos con el asterísco ('*') son obligatorios</p>
+
+            <div>
+
+                <label for="nombre">Nombre*</label>
+
+                <label id="label2" for="correo electrónico">Correo electrónico*</label>
+
+                <label id="label3" for="asunto">Asunto*</label>
+
+            </div>
+            
+
+            <br><br> <!--Salto a la siguiente línea (donde irán los tres input)-->
+
+            <input type ="text" class="input1" id="nombre" name="nombre" required minlength="3" maxlength="20"/>
+            
+            <input type ="email" class="input2" id="correo electrónico" name="correo electrónico" required/>
+
+            <input type ="text" class="input3" id="asunto" name="asunto" required minlength="5" maxlength="50"/>
+
+            <br><br> <!--Salto a la siguiente línea (donde irá el label de "mensaje")-->
+
+            <label id="mensaje" for="Mensaje">Mensaje</label>
+
+            <br><br> <!--Salto a la siguiente línea (donde irá el text area)-->
+
+            <textarea id="contenido" name="mensaje"></textarea>
+
+            <br><br> <!--Salto a la siguiente línea (donde irá el botón "Enviar")-->
+
+            <input type="submit" id="enviar"value="Enviar" name="enviar">
+
+        </section>
+    </form> 
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Verificación de Edad</title>
+</head>
+<body class="container my-5">
+    <div class="card">
+        <div class="card-body text-center">
+            <h2 class="card-title mb-4">Verificación de Edad</h2>
+            <input type="number" id="edad" class="form-control mb-3" placeholder="Ingrese su edad">
+            <button onclick="verificarEdad()" class="btn btn-info">Verificar</button>
+            <p id="mensaje" class="mt-4 alert alert-warning d-none"></p>
+        </div>
+    </div>
+
+    <script>
+        function verificarEdad() {
+            const edad = parseInt(document.getElementById("edad").value);
+            const mensajeElemento = document.getElementById("mensaje");
+            mensajeElemento.textContent = edad >= 18 
+                ? "Usted tiene acceso a todos nuestros servicios." 
+                : "Usted tiene acceso a servicios limitados.";
+            mensajeElemento.classList.remove("d-none");
+        }
+    </script>
+</body>
+</html>

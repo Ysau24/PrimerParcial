@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form {
+    background-color: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 600px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: left;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    text-align: left;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+div {
+    margin-left: 2px;
+    display: inline;
+    justify-content: space-between; /* Distribuir los espacios entre los elementos */
+    text-align: left;
+    font-weight: bold;
+    width: 30%;
+    color: #333;
+    
+}
+
+#label2 
+{
+    margin-left: 137px; /* Espacio entre los grupos de entrada */
+}
+
+#label3 
+{
+    margin-left: 55px; /* Espacio entre los grupos de entrada */
+}
+
+.input-container {
+    display: inline;
+    justify-content: space-between; /* Alinear inputs uno al lado del otro */
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 32%; /* Ancho para tres inputs en una fila */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px; /* Espacio inferior */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+.input2
+{
+    margin-left: 7px;
+}
+
+.input3
+{
+    margin-left: 7px;
+}
+
+
+#mensaje
+{
+    font-weight: bold;
+    color: #333;
+}
+
+textarea {
+    width: 96.5%; /* Ancho completo */
+    height: 90px; /* Altura del área de texto */
+    resize: none; /* Deshabilitar redimensionamiento */
+    padding: 10px; /* Espaciado interior */
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bordes redondeados */
+    margin-top: 9px; /* Espacio superior */
+}
+
+#enviar
+{
+    padding: 10px;
+    background-color:steelblue;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px
+}
+
+#enviar:hover 
+{
+    background-color: #4682b4; /* Color más oscuro al pasar el ratón */
+}
+
+

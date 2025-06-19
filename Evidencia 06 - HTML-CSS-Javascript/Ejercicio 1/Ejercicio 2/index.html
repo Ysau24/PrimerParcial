@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Meses del Año</title>
+</head>
+<body class="container my-5">
+    <div class="card">
+        <div class="card-body text-center">
+            <h2 class="card-title mb-4">Mostrar el sexto mes del año</h2>
+            <button onclick="mostrarMes()" class="btn btn-primary">Mostrar Mes</button>
+            <p id="mes" class="mt-4 alert alert-info d-none"></p>
+        </div>
+    </div>
+
+    <script>
+        function mostrarMes() {
+            const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            const mesElemento = document.getElementById("mes");
+            mesElemento.textContent = `El sexto mes del año es: ${meses[5]}`;
+            mesElemento.classList.remove("d-none");
+        }
+    </script>
+</body>
+</html>

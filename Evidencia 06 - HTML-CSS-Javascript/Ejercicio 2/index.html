@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Bienvenida al Usuario</title>
+</head>
+<body class="container my-5">
+    <div class="card">
+        <div class="card-body text-center">
+            <h2 class="card-title mb-4">Bienvenida Personalizada</h2>
+            <input type="text" id="nombre" class="form-control mb-3" placeholder="Escribe tu nombre">
+            <button onclick="saludarUsuario()" class="btn btn-success">Saludar</button>
+            <p id="mensaje" class="mt-4 alert alert-success d-none"></p>
+        </div>
+    </div>
+
+    <script>
+        function saludarUsuario() {
+            const nombre = document.getElementById("nombre").value;
+            const mensajeElemento = document.getElementById("mensaje");
+            mensajeElemento.textContent = `Bienvenido ${nombre}, al sistema de consulta.`;
+            mensajeElemento.classList.remove("d-none");
+        }
+    </script>
+</body>
+</html>
